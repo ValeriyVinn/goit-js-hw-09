@@ -20,7 +20,7 @@ function onStartBtnClick() {
 
 function setColor() {
   const colorValue = getRandomHexColor();
-  console.log(`Color = `, colorValue);
+  // console.log(`Color = `, colorValue);
   document.body.style.backgroundColor = colorValue;
 }
 

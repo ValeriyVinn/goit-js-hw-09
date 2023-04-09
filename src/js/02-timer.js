@@ -3,7 +3,6 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import Notiflix from 'notiflix';
 
-
 const btnStartTimer = document.querySelector('button[data-start]');
 const dayRemaining = document.querySelector('.value[data-days]');
 const hourRemaining = document.querySelector('.value[data-hours]');
@@ -22,7 +21,7 @@ const options = {
   minDate: 'today',
   minuteIncrement: 1,
   onClose(selectedDates) {
-    console.log(selectedDates[0]);
+    // console.log(selectedDates[0]);
     futureTime = selectedDates[0].getTime();
     clearInterval(timerId);
     setMainTimer(0);
@@ -45,7 +44,7 @@ function onStartBtnClick() {
 function setRemaining() {
   const realTime = Date.now();
   const timeRemaining = futureTime - realTime;
-  console.log(`timeRemaining(ms) = `, timeRemaining);
+  // console.log(`timeRemaining(ms) = `, timeRemaining);
   timeRemaining > 0
     ? console.log(setMainTimer(timeRemaining))
     : (clearInterval(timerId), (btnStartTimer.disabled = true));
@@ -66,22 +65,15 @@ function addLeadingZero(value) {
 }
 
 function convertMs(ms) {
-  // Number of milliseconds per unit of time
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
 
-  // Remaining days
   const days = Math.floor(ms / day);
-  // Remaining hours
   const hours = Math.floor((ms % day) / hour);
-  // Remaining minutes
   const minutes = Math.floor(((ms % day) % hour) / minute);
-  // Remaining seconds
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
   return { days, hours, minutes, seconds };
 }
-
-

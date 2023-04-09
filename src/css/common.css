@@ -16,3 +16,83 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker,
+#promise-input {
+  background-color: rgb(137, 178, 255);
+  height: 50px;
+  text-align: center;
+  color: rgb(17, 10, 68);
+
+  font-size: 25px;
+  font-weight: 700;
+
+  border-radius: 10px;
+  border-color: blue;
+}
+
+#promise-input {
+  margin-bottom: 10px;
+}
+
+[data-start],
+[data-stop] {
+  margin-left: 10px;
+  background-color: rgb(137, 178, 255);
+  color: rgb(17, 10, 68);
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: blue;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.timer {
+  display: flex;
+  padding-top: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-right: 51px;
+}
+
+.value {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(33, 79, 165);
+}
+
+.label {
+  color: rgb(17, 10, 68);
+  font-size: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: rgb(17, 10, 68);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.label-amount {
+  margin-left: 90px;
+}
+
+.btn-create-promies {
+  width: 342px;
+  background-color: rgb(137, 178, 255);
+  border-radius: 10px;
+  border-color: blue;
+  color: rgb(17, 10, 68);
+  font-size: 25px;
+  font-weight: 700;
+  height: 50px;
+
+  margin-left: 192px;
+}
