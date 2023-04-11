@@ -11,7 +11,7 @@ function onFormSubmit(event) {
   const step = event.currentTarget.step.valueAsNumber;
   let delay = event.currentTarget.delay.valueAsNumber;
 
-  if (delay < 0 || step < 0 || amount < 0) {
+  if (delay < 0 || step < 0 || amount <= 0) {
     Notiflix.Notify.warning('Please enter a positive number');
   } else {
     for (
