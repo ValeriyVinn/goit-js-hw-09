@@ -33,6 +33,7 @@ img {
 
 #promise-input {
   margin-bottom: 10px;
+  width: 350px;
 }
 
 [data-start],
@@ -85,14 +86,13 @@ img {
 }
 
 .btn-create-promies {
-  width: 342px;
+  width: 350px;
   background-color: rgb(137, 178, 255);
   border-radius: 10px;
   border-color: blue;
   color: rgb(17, 10, 68);
   font-size: 25px;
   font-weight: 700;
-  height: 50px;
-
+  padding: 9px 9px;
   margin-left: 192px;
 }
